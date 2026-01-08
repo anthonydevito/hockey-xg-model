@@ -1,0 +1,12 @@
+# Data set used is 2018-2024 shot data from MoneyPuck
+# zip download is here: https://peter-tanner.com/moneypuck/downloads/shots_2018-2024.zip
+data/
+
+# Python goodies
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Local virtual environments
+venv/
+.env
