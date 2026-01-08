@@ -9,4 +9,5 @@ __pycache__/
 
 # Local virtual environments
 venv/
+.venv/
 .env
