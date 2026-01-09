@@ -1,5 +1,5 @@
 # Using a slim version of Python for faster builds
-FROM python:3.11-slim
+FROM python:3.12-slim
 
 # Directory setup
 WORKDIR /app
