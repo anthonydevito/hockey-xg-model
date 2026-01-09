@@ -1,6 +1,7 @@
 import pandas as pd
 import joblib
-from xgboost import XGBClassifier
+import matplotlib.pyplot as plt
+from xgboost import XGBClassifier, plot_importance
 from features import calculate_shot_features
 
 def train():
@@ -25,6 +26,13 @@ def train():
     joblib.dump(model, 'models/xg_model.joblib')
     joblib.dump(features, 'models/feature_list.joblib')
     print("Model trained and saved to models/xg_model.joblib")
+
+    # Create Feature Importance plot PNG
+    plt.figure(figsize=(10, 8))
+    plot_importance(model)
+    plt.title("Feature Importance: NHL xG Model")
+    plt.savefig('models/feature_importance.png')
+    print("Feature importance plot saved to models/feature_importance.png")
 
 if __name__ == "__main__":
     train()

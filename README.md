@@ -44,5 +44,7 @@ The model was trained on the **MoneyPuck Recent Seasons dataset** (~780k shots).
 * **Key Driver:** Shot Distance remains the highest-weighted feature in the model's feature importance.
 * **Insight:** "Rush" shots show a $1.4x$ increase in goal probability compared to stationary set plays from the same coordinates.
 
+![Model Feature Importance](models/feature_importance.png)
+
 ---
 *Note: This project was developed as part of a technical demonstration for the Tampa Bay Lightning Data Science department.*
