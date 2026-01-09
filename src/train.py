@@ -31,6 +31,7 @@ def train():
     plt.figure(figsize=(10, 8))
     plot_importance(model)
     plt.title("Feature Importance: NHL xG Model")
+    plt.tight_layout()
     plt.savefig('models/feature_importance.png')
     print("Feature importance plot saved to models/feature_importance.png")
 
